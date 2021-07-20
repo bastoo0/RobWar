@@ -1,0 +1,38 @@
+def init():
+
+    global BLANC, NOIR, GRISFONCE, GRISCLAIR, VERT, ROUGE, VIOLET, VIOLETFONCE, JAUNE
+    BLANC = (255, 255, 255)
+    NOIR = (0, 0, 0) 
+    GRISFONCE = (40, 40, 40)
+    GRISCLAIR = (100, 100, 100)
+    VERT = (0, 255, 0)
+    ROUGE = (255, 0, 0)
+    VIOLET = (255, 0, 100)
+    VIOLETFONCE = (100, 0, 100)
+    JAUNE = (255, 255, 0)
+
+    global GAUCHE, DROITE, HAUT, BAS
+    GAUCHE = 0
+    DROITE = 1
+    HAUT = 2
+    BAS = 3
+
+    global FPS, TITLE, BGCOLOR, VIE, DUREE_BALLE, CLOCK_MOB
+    FPS = 10
+    TITLE = "RobWar"
+    BGCOLOR = GRISFONCE
+    VIE = 3
+    DUREE_BALLE = 5
+    CLOCK_MOB = 5
+
+    global TILESIZE, TILECOUNT
+    TILESIZE = 32
+    TILECOUNT = 16
+
+    # squared grid
+    global WIDTH, HEIGHT
+    WIDTH = TILECOUNT * TILESIZE 
+    HEIGHT = TILECOUNT * TILESIZE 
+
+    global MOB_COUNT
+    MOB_COUNT = 2
